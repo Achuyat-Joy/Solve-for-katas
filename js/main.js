@@ -31,3 +31,19 @@ function descendingOrder(n){
 }
 
 console.log(descendingOrder(0))
+
+
+// 3. add each digit of a number with given power increasing with every step and return if answer/number is positive else -1
+
+function digPow(n, p){
+
+  let k = n
+  .toString() //to split
+  .split('') //taking in array
+  .reduce((a,b)=>a+Math.pow(b,p++),0)
+
+  return (k%n==0? k/n : -1);
+
+}
+
+console.log(digPow(46288, 3))
