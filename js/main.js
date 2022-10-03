@@ -47,3 +47,34 @@ function digPow(n, p){
 }
 
 console.log(digPow(46288, 3))
+
+
+// 4. validate pin (4/6 digit number) 
+
+function validatePIN (pin) {
+
+  let n = pin
+  .split('')
+
+  let len = n.length
+  let check = 0;
+
+  if(len==4 || len == 6 ){
+    for(let i = 0; i<len; i++){
+    if(/\d/.test(n[i])){
+      check++;
+    }
+  }
+  }
+  
+  return (len==4 & check==4 || len==6 && check==6? true : false);
+
+}
+
+console.log(validatePIN ("-1.234"))
+
+// short approach learned: 
+
+function validatePIN(pin) {
+  return /^(\d{4}|\d{6})$/.test(pin)
+}
