@@ -89,3 +89,18 @@ function even_or_odd(number) {
 }
 
 console.log(even_or_odd(17))
+
+
+// 6. Return negative
+
+function makeNegative(num) {
+  return (num>0? num*-1 : num);
+}
+
+console.log(makeNegative(-9));
+
+// short approach:
+
+function makeNegative(num) {
+  return -Math.abs(num);
+}
