@@ -104,3 +104,10 @@ console.log(makeNegative(-9));
 function makeNegative(num) {
   return -Math.abs(num);
 }
+
+
+// 7. Convert a Number to a String! 
+
+function numberToString(num) {
+  return num.toString();
+}
