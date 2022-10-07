@@ -111,3 +111,16 @@ function makeNegative(num) {
 function numberToString(num) {
   return num.toString();
 }
+
+
+
+// 8. Remove First and Last Character
+
+function removeChar(str){
+ str = str.replace(/^./,'');
+  
+  str = str.replace(/.$/,'');
+  
+  return str;
+
+};
