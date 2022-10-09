@@ -136,3 +136,21 @@ function noSpace(x){
 
 console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
 
+
+// 10. Square(n) Sum
+
+function squareSum(numbers){
+  
+  let result = 0;
+  
+  // for(let i = 0; i < numbers.length; i++){
+  //   result += Math.pow(numbers[i],2);
+  // }
+
+  numbers = numbers.reduce((a,b)=>a+Math.pow(b,2),0)
+  
+  return numbers;
+}
+
+console.log(squareSum([1,2,3]));
+
