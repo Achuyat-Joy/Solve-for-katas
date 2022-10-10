@@ -154,3 +154,11 @@ function squareSum(numbers){
 
 console.log(squareSum([1,2,3]));
 
+
+// 11. Convert boolean values to strings 'Yes' or 'No'.
+
+function boolToWord( bool ){
+  
+  return (bool ? 'Yes' : 'No')
+}
+
