@@ -162,3 +162,10 @@ function boolToWord( bool ){
   return (bool ? 'Yes' : 'No')
 }
 
+
+// 12.String repeat
+
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+
