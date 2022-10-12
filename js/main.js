@@ -169,3 +169,19 @@ function repeatStr (n, s) {
   return s.repeat(n);
 }
 
+
+// 13. Grasshopper - Summation (sum all the number from 1 till given number)
+
+var summation = function (num) {
+
+  let result = 0;
+
+  for(let i = num; i>0 ; i--){
+    result+=i;
+  }
+  
+  return result;
+}
+
+console.log(summation(8));
+
