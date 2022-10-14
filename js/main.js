@@ -185,3 +185,26 @@ var summation = function (num) {
 
 console.log(summation(8));
 
+
+// 14. Counting sheep of boolean
+
+function countSheeps(arrayOfSheep) {
+  
+  let result = 0;
+
+  arrayOfSheep = arrayOfSheep.filter(val=>{
+    if(val){
+      result++;
+    }
+  })
+
+  return result;
+}
+
+console.log(countSheeps([true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]));
+
