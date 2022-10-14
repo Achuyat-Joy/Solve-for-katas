@@ -208,3 +208,14 @@ console.log(countSheeps([true,  true,  true,  false,
   true,  true,  true,  true ,
   false, false, true,  true]));
 
+
+  // 15. Find the smallest integer in the array
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    args = args.sort((a,b)=>a-b);
+    
+    return args[0];
+  }
+}
+
