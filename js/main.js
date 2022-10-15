@@ -219,3 +219,21 @@ class SmallestIntegerFinder {
   }
 }
 
+
+// 16. Century from year
+
+function century(year) {
+
+  // if(year%100==0){
+  //   return year/100
+  // }else if(year%100>0){
+  //   return Math.floor(year/100)+1;
+  // }
+
+  return (year%100 == 0 ? year/100 : year%100 > 0 ? Math.floor(year / 100) + 1 : 0) 
+
+}
+
+// short approach: 
+
+Math.ceil(year/100);
