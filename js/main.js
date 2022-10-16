@@ -237,3 +237,19 @@ function century(year) {
 // short approach: 
 
 Math.ceil(year/100);
+
+
+// 17. Gravity Flip 
+
+const flip=(d, a)=>{
+  if(d == 'R'){
+    a = a.sort((a,b) => a-b);
+  }else if(d == 'L'){
+    a = a.sort((a,b) => b-a);
+  }
+
+  return a;
+}
+
+
+console.log(flip('L', [3, 2, 1, 2]))
