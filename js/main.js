@@ -253,3 +253,33 @@ const flip=(d, a)=>{
 
 
 console.log(flip('L', [3, 2, 1, 2]))
+
+
+// 18. check same case
+
+function sameCase(a, b){
+
+  if(/[a-z]/.test(a)){
+    if(/[a-z]/.test(b)){
+      return 1;
+    }else if(/[A-Za-z]/.test(b)){
+      return 0;
+    }else{
+      return -1;
+    }
+  }else if(/[A-Z]/.test(a)){
+    if(/[A-Z]/.test(b)){
+      return 1;
+    }else if(/[A-Za-z]/.test(b)){
+      return 0;
+    }else{
+      return -1;
+    }
+  }else{
+    return -1;
+  }
+
+}
+
+
+console.log(sameCase(':', ':'))
