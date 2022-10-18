@@ -283,3 +283,38 @@ function sameCase(a, b){
 
 
 console.log(sameCase(':', ':'))
+
+
+// 19.quarter of year
+
+const quarterOf = (month) => {
+  // Your code here
+
+  const quarter = {
+    1:1,
+    2:1,
+    3:1,
+    4:2,
+    5:2,
+    6:2,
+    7:3,
+    8:3,
+    9:3,
+    10:4,
+    11:4,
+    12:4
+  }
+
+  // for(let val in quarter){
+  //   if(val==month){
+      return quarter[month];
+    // }
+  // }
+}
+
+
+console.log(quarterOf(11))
+
+// shorter approach: 
+
+Math.ceil(month/3)
