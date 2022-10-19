@@ -318,3 +318,14 @@ console.log(quarterOf(11))
 // shorter approach: 
 
 Math.ceil(month/3)
+
+
+// 20. Coefficients of the Quadratic Equation
+
+function quadratic(x1, x2){
+  
+  return [1,(-x1)+(-x2),x1*x2];
+  
+}
+
+console.log(quadratic(1,1))
