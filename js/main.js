@@ -329,3 +329,19 @@ function quadratic(x1, x2){
 }
 
 console.log(quadratic(1,1))
+
+
+// 21. A wolf in sheep's clothing
+
+function warnTheSheep(queue) {
+
+  if(queue.indexOf('wolf')==queue.length-1){
+    return "Pls go away and stop eating my sheep";
+  }else{
+    return `Oi! Sheep number ${queue.length-(queue.indexOf('wolf')+1)}! You are about to be eaten by a wolf!`
+  }
+
+}
+
+
+console.log(warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sheep", "sheep"]))
