@@ -345,3 +345,15 @@ function warnTheSheep(queue) {
 
 
 console.log(warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sheep", "sheep"]))
+
+
+// 22. Closest elevator
+
+function elevator(left, right, call){
+  
+  return (call==right? 'right' : call!==left && (call-right==1 || right - call == 1) || right==left? 'right' : 'left')
+  
+}
+
+
+console.log(elevator(2,2,0))
