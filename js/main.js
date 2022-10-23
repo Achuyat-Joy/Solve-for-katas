@@ -357,3 +357,30 @@ function elevator(left, right, call){
 
 
 console.log(elevator(2,2,0))
+
+
+// 23.Total amount of points
+
+
+function points(games) {
+
+  let arr = [];
+
+  games = games.filter(val=>{
+    arr.push(val.split(':'));
+  })
+
+  let point = 0;
+
+  arr = arr.filter(val=>{
+    if(parseInt(val[0])>parseInt(val[1])){
+      point+=3;
+    }else if(parseInt(val[0])==parseInt(val[1])){
+      point++;
+    }else{
+      point+=0;
+    }
+  })
+  
+  return point;
+}
