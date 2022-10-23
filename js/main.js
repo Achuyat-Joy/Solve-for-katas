@@ -361,7 +361,6 @@ console.log(elevator(2,2,0))
 
 // 23.Total amount of points
 
-
 function points(games) {
 
   let arr = [];
@@ -384,3 +383,19 @@ function points(games) {
   
   return point;
 }
+
+
+// 24. Distance of pillars
+
+function pillars(numPill, dist, width) {
+
+  if(numPill<2){
+    return 0;
+  }else{
+    return ((dist*100*(numPill-1))+(width*(numPill-2)))
+  }
+
+}
+
+
+console.log(pillars(11, 15, 30))
