@@ -397,5 +397,13 @@ function pillars(numPill, dist, width) {
 
 }
 
-
 console.log(pillars(11, 15, 30))
+
+
+// 25. twice the age
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  
+  return (sonYearsOld*2>dadYearsOld ? sonYearsOld*2-dadYearsOld : dadYearsOld-sonYearsOld*2);
+
+}
