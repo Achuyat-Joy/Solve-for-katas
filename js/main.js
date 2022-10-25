@@ -407,3 +407,23 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return (sonYearsOld*2>dadYearsOld ? sonYearsOld*2-dadYearsOld : dadYearsOld-sonYearsOld*2);
 
 }
+
+// 26.Sum of differences in array
+
+function sumOfDifferences(arr) {
+
+  arr = arr.sort((a,b)=>b-a);
+  
+  let add = 0;
+
+  for(let i = 0; i < arr.length; i++){
+    if(i < arr.length-1){
+      add += (arr[i] - arr[i+1])
+    }
+  }
+
+  return add;
+}
+
+
+console.log(sumOfDifferences([-3, -2, -1]))
