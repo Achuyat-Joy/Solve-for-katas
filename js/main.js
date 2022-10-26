@@ -425,5 +425,20 @@ function sumOfDifferences(arr) {
   return add;
 }
 
-
 console.log(sumOfDifferences([-3, -2, -1]))
+
+
+// 27. Draw stairs
+
+function drawStairs(n) {
+  let a = ''
+
+  for(let i = 0; i < n ; i++){
+    a+='I\n '
+    a+=' '.repeat(i)
+  }
+
+  return a.trim();
+}
+
+console.log(drawStairs(3))
