@@ -442,3 +442,19 @@ function drawStairs(n) {
 }
 
 console.log(drawStairs(3))
+
+
+// 28. If you can't sleep, just count sheep!!
+
+var countSheep = function (num){
+  
+  let a = '';
+  
+  for(let i = 1; i < num+1; i++){
+    a += `${i} sheep...`
+  }
+  
+  return a;
+}
+
+console.log(countSheep(3))
