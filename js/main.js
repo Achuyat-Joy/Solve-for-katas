@@ -466,3 +466,11 @@ function finalGrade (exam, projects) {
     
   return (exam>90 || projects>10? 100: exam>75 && projects>=5? 90: exam>50 && projects>=2 ? 75 : 0)
 }
+
+
+// 30.Area or Perimeter 
+
+ const areaOrPerimeter = function(l , w) {
+  
+  return (l==w? l*w : l*2+w*2)
+};
