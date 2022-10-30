@@ -474,3 +474,19 @@ function finalGrade (exam, projects) {
   
   return (l==w? l*w : l*2+w*2)
 };
+
+
+// 31.Multiplication table for number
+
+function multiTable(number) {
+  
+  let ans = '';
+  
+  for(let i = 1; i < 11; i++){
+    ans+=`${i } * ${ number } = ${i*number}\n`;
+  }
+
+  return ans;
+}
+
+console.log(multiTable(5))
