@@ -490,3 +490,36 @@ function multiTable(number) {
 }
 
 console.log(multiTable(5))
+
+
+// 32. Cat years, Dog years
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+
+  let h = humanYears;
+  let c = 0;
+  let d = 0;
+
+  if(h==1){
+    c = 15;
+    d = 15;
+  }else if(h==2){
+    c = 24;
+    d = 24;
+  }else{
+    c = 24;
+    d = 24;
+
+    for(let i = 3; i <= h; i++){
+      c+=4;
+      d+=5;
+    }
+  }
+
+  let arr = [h,c,d];
+
+  return arr;
+}
+
+
+console.log(humanYearsCatYearsDogYears(10))
