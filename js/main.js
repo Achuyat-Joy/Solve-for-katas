@@ -523,3 +523,23 @@ var humanYearsCatYearsDogYears = function(humanYears) {
 
 
 console.log(humanYearsCatYearsDogYears(10))
+
+
+// 33. Multiple of index
+
+function multipleOfIndex(array) {
+  let arr = [];
+
+  // console.log(array.length)
+  
+  for(let i = 0; i<=array.length; i++){
+    // console.log(i)
+    if(array[i]%i==0){
+      arr.push(array[i])
+  }
+  }
+
+  return arr;
+}
+
+console.log(multipleOfIndex([ 68, -1, 1, -7, 10, 10 ]))
