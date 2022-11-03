@@ -518,3 +518,14 @@ console.log(multipleOfIndex([68, -1, 1, -7, 10, 10]));
 function typeOfSum(a, b) {
   return typeof (a + b);
 }
+
+// 35. Array plus array (adding all the items of two array and returning the sum)
+
+function arrayPlusArray(arr1, arr2) {
+  arr1 = arr1.reduce((a, b) => a + b, 0);
+  arr2 = arr2.reduce((a, b) => a + b, 0);
+
+  return arr1 + arr2;
+}
+
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
