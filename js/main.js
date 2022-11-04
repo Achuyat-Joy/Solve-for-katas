@@ -529,3 +529,23 @@ function arrayPlusArray(arr1, arr2) {
 }
 
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+// 36. Return the day (1-7 as the weekday names)
+
+function whatday(num) {
+  const day = {
+    1: "Sunday",
+    2: "Monday",
+    3: "Tuesday",
+    4: "Wednesday",
+    5: "Thursday",
+    6: "Friday",
+    7: "Saturday",
+  };
+
+  return num > 0 && num <= 7
+    ? day[num]
+    : "Wrong, please enter a number between 1 and 7";
+}
+
+console.log(whatday(3));
