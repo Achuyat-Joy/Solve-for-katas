@@ -549,3 +549,11 @@ function whatday(num) {
 }
 
 console.log(whatday(3));
+
+// 37. Is he gonna survive? (return true if bullets are twice or more than dragons as it takes two bullets to kill a dragon)
+
+function hero(bullets, dragons) {
+  return dragons * 2 <= bullets;
+}
+
+console.log(hero(195, 92));
