@@ -557,3 +557,11 @@ function hero(bullets, dragons) {
 }
 
 console.log(hero(195, 92));
+
+// 38. For Twins: 1. Types (check if the variable type matches with given type)
+
+function typeValidation(variable, type) {
+  return typeof variable == type;
+}
+
+console.log(typeValidation(42, "number"));
