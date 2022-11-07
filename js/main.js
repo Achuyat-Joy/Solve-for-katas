@@ -565,3 +565,17 @@ function typeValidation(variable, type) {
 }
 
 console.log(typeValidation(42, "number"));
+
+// 39. Reversed sequence
+
+const reverseSeq = (n) => {
+  let arr = [];
+
+  for (let i = n; i > 0; i--) {
+    arr.push(i);
+  }
+
+  return arr;
+};
+
+console.log(reverseSeq(5));
