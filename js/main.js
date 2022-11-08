@@ -579,3 +579,29 @@ const reverseSeq = (n) => {
 };
 
 console.log(reverseSeq(5));
+
+// 40. Sum The Strings
+
+function sumStr(a, b) {
+  if (a == "" && b == "") {
+    return "0";
+  } else if (a == "") {
+    return b;
+  } else if (b == "") {
+    return a;
+  } else {
+    return (parseInt(a) + parseInt(b)).toString();
+  }
+}
+
+console.log(sumStr("", "5"));
+
+// short approaches:
+
+one: function sumStr(a, b) {
+  return String(Number(a) + Number(b));
+}
+
+two: function sumStr(a, b) {
+  return ((parseInt(a) || 0) + (parseInt(b) || 0)).toString();
+}
