@@ -605,3 +605,11 @@ one: function sumStr(a, b) {
 two: function sumStr(a, b) {
   return ((parseInt(a) || 0) + (parseInt(b) || 0)).toString();
 }
+
+// 41.Third Angle of a Triangle
+
+function otherAngle(a, b) {
+  return 180 - (a + b);
+}
+
+console.log(otherAngle(30, 60));
