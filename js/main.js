@@ -639,3 +639,11 @@ function grow(x) {
 }
 
 console.log(grow([1, 2, 3]));
+
+// 44. Will you make it?
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump <= mpg * fuelLeft;
+};
+
+console.log(zeroFuel(60, 30, 3));
