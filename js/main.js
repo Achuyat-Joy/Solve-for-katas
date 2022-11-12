@@ -629,3 +629,13 @@ function bmi(weight, height) {
 }
 
 console.log(bmi(80, 1.8));
+
+// 43.Beginner - Reduce but Grow (multiply all the numbers in the array)
+
+function grow(x) {
+  x = x.reduce((a, b) => a * b, 1);
+
+  return x;
+}
+
+console.log(grow([1, 2, 3]));
