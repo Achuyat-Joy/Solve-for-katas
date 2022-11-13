@@ -647,3 +647,43 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 };
 
 console.log(zeroFuel(60, 30, 3));
+
+// 45. Switch it Up (write the number in string with switch case)
+
+function switchItUp(number) {
+  switch (number) {
+    case 1:
+      number = "One";
+      break;
+    case 2:
+      number = "Two";
+      break;
+    case 3:
+      number = "Three";
+      break;
+    case 4:
+      number = "Four";
+      break;
+    case 5:
+      number = "Five";
+      break;
+    case 6:
+      number = "Six";
+      break;
+    case 7:
+      number = "Seven";
+      break;
+    case 8:
+      number = "Eight";
+      break;
+    case 9:
+      number = "Nine";
+      break;
+    default:
+      number = "Zero";
+  }
+
+  return number;
+}
+
+console.log(switchItUp(1));
