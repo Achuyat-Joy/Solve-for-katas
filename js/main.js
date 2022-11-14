@@ -687,3 +687,11 @@ function switchItUp(number) {
 }
 
 console.log(switchItUp(1));
+
+// 46. Convert to Binary
+
+function toBinary(n) {
+  n = n.toString(2);
+
+  return parseInt(n);
+}
