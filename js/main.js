@@ -695,3 +695,9 @@ function toBinary(n) {
 
   return parseInt(n);
 }
+
+// 47. 5 without numbers!
+
+function unusualFive() {
+  return ["a", "b", "c", "d", "e"].length;
+}
