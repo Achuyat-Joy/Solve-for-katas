@@ -701,3 +701,19 @@ function toBinary(n) {
 function unusualFive() {
   return ["a", "b", "c", "d", "e"].length;
 }
+
+// 48. Count odd numbers below given number
+
+function oddCount(n) {
+  // let check = 0;
+
+  // for(let i=n-1; i>0; i--){
+  //   i%2>0?check++:check
+  // }
+
+  // return check;
+
+  return Math.floor(n / 2);
+}
+
+console.log(oddCount(7));
