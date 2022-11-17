@@ -717,3 +717,18 @@ function oddCount(n) {
 }
 
 console.log(oddCount(7));
+
+// 49. Help the Elite Squad of Brazilian forces BOPE (determing the magazine number as given is the brand of gun and street number, each street needs 3 bullets)
+
+function magNumber(info) {
+  let name = {
+    PT92: 17,
+    M4A1: 30,
+    M16A2: 30,
+    PSG1: 5,
+  };
+
+  let [a, b] = info;
+
+  return Math.ceil((b * 3) / name[a]);
+}
