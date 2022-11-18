@@ -732,3 +732,16 @@ function magNumber(info) {
 
   return Math.ceil((b * 3) / name[a]);
 }
+
+// 50. The Feast of Many Beasts (checking if the beast name and dish name starts and ends with the same letter or not)
+
+function feast(beast, dish) {
+  //beast = beast.split('');
+  //dish = dish.split('');
+
+  return (
+    beast[0] == dish[0] && beast[beast.length - 1] == dish[dish.length - 1]
+  );
+}
+
+console.log(feast("great blue heron", "garlic naan"));
