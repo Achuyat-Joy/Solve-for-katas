@@ -745,3 +745,26 @@ function feast(beast, dish) {
 }
 
 console.log(feast("great blue heron", "garlic naan"));
+
+// 51. function firstNonConsecutive (arr) {
+
+  // let newArr = [arr[0]];
+
+  for(let i=0; i<arr.length; i++){
+    // newArr.push(newArr[i]+1);
+
+    // if(newArr[i]!=arr[i]){
+    //   return arr[i];
+    // }
+
+    if(arr[i]+1!=arr[i+1]){
+      return arr[i+1]
+    }
+  }
+
+  return null;
+
+}
+
+
+console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
