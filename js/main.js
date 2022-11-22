@@ -787,3 +787,28 @@ function derive(coefficient, exponent) {
 }
 
 console.log(derive(7, 8));
+
+// 54. Basic Mathematical Operations
+
+function basicOp(operation, value1, value2) {
+  let result = 0;
+
+  switch (operation) {
+    case "+":
+      result = value1 + value2;
+      break;
+    case "-":
+      result = value1 - value2;
+      break;
+    case "*":
+      result = value1 * value2;
+      break;
+    case "/":
+      result = value1 / value2;
+      break;
+  }
+
+  return result;
+}
+
+console.log(basicOp("/", 4, 7));
