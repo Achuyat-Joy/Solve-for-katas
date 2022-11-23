@@ -812,3 +812,11 @@ function basicOp(operation, value1, value2) {
 }
 
 console.log(basicOp("/", 4, 7));
+
+// 55. Abbreviate a Two Word Name (only first letter of each word in capital)
+
+function abbrevName(name) {
+  return name.replace(/(\w)(\w*)(\s)(\w)(\w*)/, "$1.$4").toUpperCase();
+}
+
+console.log(abbrevName("P favuzzi"));
