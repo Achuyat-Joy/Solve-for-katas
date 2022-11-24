@@ -820,3 +820,19 @@ function abbrevName(name) {
 }
 
 console.log(abbrevName("P favuzzi"));
+
+// 56. Find Multiples of a Number
+
+function findMultiples(integer, limit) {
+  let x = Math.floor(limit / integer);
+
+  let result = [];
+
+  for (let i = 1; i <= x; i++) {
+    result.push(integer * i);
+  }
+
+  return result;
+}
+
+console.log(findMultiples(4, 27));
