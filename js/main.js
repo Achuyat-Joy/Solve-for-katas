@@ -836,3 +836,17 @@ function findMultiples(integer, limit) {
 }
 
 console.log(findMultiples(4, 27));
+
+// 57. Merge two sorted arrays into one
+
+function mergeArrays(arr1, arr2) {
+  arr2.filter((val) => {
+    if (!arr1.includes(val)) {
+      arr1.push(val);
+    }
+  });
+
+  return arr1.sort((a, b) => a - b);
+}
+
+console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2]));
