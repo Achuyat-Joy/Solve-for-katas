@@ -850,3 +850,32 @@ function mergeArrays(arr1, arr2) {
 }
 
 console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2]));
+
+// 58. CSV representation of array
+
+function toCsvText(array) {
+  let ans = "";
+
+  array.filter((val) => {
+    val.filter((val2) => (ans += val2 + ","));
+    ans = ans.replace(/,$/, "");
+    ans += "\n";
+  });
+
+  ans = ans.replace(/\s$/, "");
+
+  return ans;
+}
+
+console.log(
+  toCsvText([
+    [0, 1, 2, 3, 45],
+    [10, 11, 12, 13, 14],
+    [20, 21, 22, 23, 24],
+    [30, 31, 32, 33, 34],
+  ])
+);
+
+// short approach:
+
+return array.join("\n");
