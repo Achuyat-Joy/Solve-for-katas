@@ -879,3 +879,22 @@ console.log(
 // short approach:
 
 return array.join("\n");
+
+// 59. Define a card suit
+
+function defineSuit(card) {
+  card = card.replace(/^\w*/, "");
+
+  switch (card) {
+    case "♣":
+      return "clubs";
+    case "♦":
+      return "diamonds";
+    case "♥":
+      return "hearts";
+    case "♠":
+      return "spades";
+  }
+}
+
+console.log(defineSuit("30♣"));
