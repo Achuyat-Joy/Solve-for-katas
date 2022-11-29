@@ -898,3 +898,17 @@ function defineSuit(card) {
 }
 
 console.log(defineSuit("30♣"));
+
+// 60. Potenciation (x to the power of y)
+
+function power(x, y) {
+  let result = 1;
+
+  for (let i = y; i > 0; i--) {
+    result *= x;
+  }
+
+  return result;
+}
+
+console.log(power(-1, 40));
