@@ -912,3 +912,19 @@ function power(x, y) {
 }
 
 console.log(power(-1, 40));
+
+// 61. Get Nth Even Number
+
+function nthEven(n) {
+  // let result = 0;
+
+  // for(let i=1; i<n; i++){
+  //   result+=2;
+  // }
+
+  // return result;
+
+  return n * 2 - 2;
+}
+
+console.log(nthEven(1));
