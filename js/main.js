@@ -928,3 +928,21 @@ function nthEven(n) {
 }
 
 console.log(nthEven(1));
+
+// 62. Who is going to pay for the wall? (return array with full name and short form of two letters)
+
+function whoIsPaying(name) {
+  // let arr = [name];
+
+  // name = name.split('');
+
+  // if(name.length>2){
+  //   let ans = name.slice(0,2)
+  //   ans = ans.join('');
+  //   arr.push(ans)
+  // }
+
+  // return arr;
+
+  return name.length > 2 ? [name, name.slice(0, 2)] : [name];
+}
