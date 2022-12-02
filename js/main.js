@@ -946,3 +946,48 @@ function whoIsPaying(name) {
 
   return name.length > 2 ? [name, name.slice(0, 2)] : [name];
 }
+
+// 63.Simple Fun #352: Reagent Formula (fill up the condition which is 1,2 can not be together, 3,4 can not be together, 5,6 must be together, 7/8 must be present)
+
+function isValid(formula){
+  
+  if(formula.includes(1) && formula.includes(2)){
+    return false;
+  }
+
+  if(formula.includes(3) && formula.includes(4)){
+    return false;
+  }
+
+  if(formula.includes(5)){
+    if(formula.includes(6)){
+      if(formula.includes(7) || formula.includes(8)){
+        return true;
+      }else{
+        return false;
+      }
+    }else{
+      return false;
+    }
+  }else if(formula.includes(6)){
+    if(formula.includes(5)){
+      if(formula.includes(7) || formula.includes(8)){
+        return true;
+      }else{
+        return false
+      }
+    }else{
+      return false;
+    }
+  }
+
+  if(formula.includes(7) || formula.includes(8)){
+    return true;
+  }
+
+  return false;
+  
+}
+
+
+console.log(isValid([1,3]))
