@@ -949,45 +949,58 @@ function whoIsPaying(name) {
 
 // 63.Simple Fun #352: Reagent Formula (fill up the condition which is 1,2 can not be together, 3,4 can not be together, 5,6 must be together, 7/8 must be present)
 
-function isValid(formula){
-  
-  if(formula.includes(1) && formula.includes(2)){
+function isValid(formula) {
+  if (formula.includes(1) && formula.includes(2)) {
     return false;
   }
 
-  if(formula.includes(3) && formula.includes(4)){
+  if (formula.includes(3) && formula.includes(4)) {
     return false;
   }
 
-  if(formula.includes(5)){
-    if(formula.includes(6)){
-      if(formula.includes(7) || formula.includes(8)){
+  if (formula.includes(5)) {
+    if (formula.includes(6)) {
+      if (formula.includes(7) || formula.includes(8)) {
         return true;
-      }else{
+      } else {
         return false;
       }
-    }else{
+    } else {
       return false;
     }
-  }else if(formula.includes(6)){
-    if(formula.includes(5)){
-      if(formula.includes(7) || formula.includes(8)){
+  } else if (formula.includes(6)) {
+    if (formula.includes(5)) {
+      if (formula.includes(7) || formula.includes(8)) {
         return true;
-      }else{
-        return false
+      } else {
+        return false;
       }
-    }else{
+    } else {
       return false;
     }
   }
 
-  if(formula.includes(7) || formula.includes(8)){
+  if (formula.includes(7) || formula.includes(8)) {
     return true;
   }
 
   return false;
-  
 }
 
+console.log(isValid([1, 3]));
 
-console.log(isValid([1,3]))
+// 64. whose move? if last player wins then his move or other.
+
+function whoseMove(lastPlayer, win) {
+  if (lastPlayer == "white" && win == true) {
+    return lastPlayer;
+  } else if (lastPlayer == "white" && win == false) {
+    return "black";
+  } else if (lastPlayer == "black" && win == false) {
+    return "white";
+  } else {
+    return lastPlayer;
+  }
+}
+
+console.log(whoseMove("white", false));
