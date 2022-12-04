@@ -1004,3 +1004,11 @@ function whoseMove(lastPlayer, win) {
 }
 
 console.log(whoseMove("white", false));
+
+// 65. Do you speak "English"? if english exist in the sentence
+
+function spEng(sentence) {
+  return /english/i.test(sentence);
+}
+
+console.log(spEng("jjhenGlish"));
