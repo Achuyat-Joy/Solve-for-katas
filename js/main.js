@@ -1012,3 +1012,23 @@ function spEng(sentence) {
 }
 
 console.log(spEng("jjhenGlish"));
+
+// 66. Invert values
+
+function invert(array) {
+  // let arr = []
+
+  //  array.map(val=>{
+  //    if(val>=0){
+  //      arr.push(-val)
+  //    }else{
+  //      arr.push(Math.abs(val))
+  //    }
+  //  })
+
+  //  return arr;
+
+  return array.map((val) => -val);
+}
+
+console.log(invert([1, -2, 3, -4, 5]));
