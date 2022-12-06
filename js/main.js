@@ -1032,3 +1032,14 @@ function invert(array) {
 }
 
 console.log(invert([1, -2, 3, -4, 5]));
+
+// 67. Seats in Theater (how many seat will be disturbed)
+
+function seatsInTheater(nCols, nRows, col, row) {
+  let nc = nCols - (col - 1);
+  let nr = nRows - row;
+
+  return nc * nr;
+}
+
+console.log(seatsInTheater(16, 11, 5, 3));
