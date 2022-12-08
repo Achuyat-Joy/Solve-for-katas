@@ -1043,3 +1043,11 @@ function seatsInTheater(nCols, nRows, col, row) {
 }
 
 console.log(seatsInTheater(16, 11, 5, 3));
+
+// 68. Will there be enough space?
+
+function enough(cap, on, wait) {
+  return on + wait > cap ? on + wait - cap : 0;
+}
+
+console.log(enough(100, 50, 60));
