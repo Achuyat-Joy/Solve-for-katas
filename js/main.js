@@ -1059,3 +1059,15 @@ function combat(health, damage) {
 }
 
 console.log(combat(100, 90));
+
+// 70. Ensure question mark
+
+function ensureQuestion(s) {
+  if (s[s.length - 1] == "?") {
+    return s;
+  } else {
+    return s + "?";
+  }
+}
+
+console.log(ensureQuestion("Yes"));
