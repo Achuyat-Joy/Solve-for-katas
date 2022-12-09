@@ -1051,3 +1051,12 @@ function enough(cap, on, wait) {
 }
 
 console.log(enough(100, 50, 60));
+
+// 69. Grasshopper - Terminal game combat function (return life remaining, if - then return 0)
+
+function combat(health, damage) {
+  
+  return damage>health?0:health-damage;
+}
+
+console.log(combat(100,90)
