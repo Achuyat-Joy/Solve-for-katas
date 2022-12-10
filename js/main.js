@@ -1071,3 +1071,13 @@ function ensureQuestion(s) {
 }
 
 console.log(ensureQuestion("Yes"));
+
+// 71. Thinkful - Number Drills: Blue and red marbles
+
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  let left = blueStart + redStart - (bluePulled + redPulled);
+
+  return (blueStart - bluePulled) / left;
+}
+
+console.log(guessBlue(5, 5, 3, 2));
