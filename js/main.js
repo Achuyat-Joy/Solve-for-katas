@@ -1093,3 +1093,17 @@ function updateLight(current) {
     return "green";
   }
 }
+
+// 73. NBA full 48 minutes average
+
+function pointsPer48(ppg, mpg) {
+  if (ppg == 0 && mpg == 0) {
+    return 0;
+  }
+
+  let x = (ppg / mpg) * 48;
+  x = x.toFixed(1);
+  return Number.parseFloat(x);
+}
+
+console.log(10, 10);
