@@ -1107,3 +1107,11 @@ function pointsPer48(ppg, mpg) {
 }
 
 console.log(10, 10);
+
+// 74. Simple Multiplication (multiply with 8 if even and with 9 if not)
+
+function simpleMultiplication(number) {
+  return number % 2 == 0 ? number * 8 : number * 9;
+}
+
+console.log(simpleMultiplication(2));
