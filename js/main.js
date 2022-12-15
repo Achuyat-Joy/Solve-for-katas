@@ -1115,3 +1115,21 @@ function simpleMultiplication(number) {
 }
 
 console.log(simpleMultiplication(2));
+
+// 75. Calculate Price Excluding VAT
+
+function excludingVatPrice(price) {
+  let x = 0;
+
+  if (price === null) {
+    return -1;
+  } else {
+    x = (price * 100) / 115;
+  }
+
+  x = x.toFixed(2);
+
+  return +x;
+}
+
+console.log(excludingVatPrice(230));
