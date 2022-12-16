@@ -1133,3 +1133,11 @@ function excludingVatPrice(price) {
 }
 
 console.log(excludingVatPrice(230));
+
+// 76. Keep Hydrated! (0.5lt in 1hour)
+
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
+
+console.log(litres(2));
