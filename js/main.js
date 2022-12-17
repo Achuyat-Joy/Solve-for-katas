@@ -1141,3 +1141,19 @@ function litres(time) {
 }
 
 console.log(litres(2));
+
+// 77. simple calculator
+
+function calculator(a, b, sign) {
+  return sign == "+"
+    ? a + b
+    : sign == "-"
+    ? a - b
+    : sign == "*"
+    ? a * b
+    : sign == "/"
+    ? a / b
+    : "unknown value";
+}
+
+console.log(calculator(1, 2, "+"));
