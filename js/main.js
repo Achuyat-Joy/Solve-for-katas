@@ -1157,3 +1157,15 @@ function calculator(a, b, sign) {
 }
 
 console.log(calculator(1, 2, "+"));
+
+// 78. Find the position in alphabet
+
+function position(letter) {
+  let start = 65;
+
+  letter = letter.toUpperCase();
+
+  return `Position of alphabet: ${letter.charCodeAt() - 64}`;
+}
+
+console.log(position("Z"));
