@@ -1169,3 +1169,17 @@ function position(letter) {
 }
 
 console.log(position("Z"));
+
+// 79. Find the Integral
+
+function integrate(coefficient, exponent) {
+  let newNumber = exponent + 1;
+
+  let result = coefficient / newNumber;
+
+  let answer = `${result}x^${newNumber}`;
+
+  return answer;
+}
+
+console.log(integrate(3, 2));
