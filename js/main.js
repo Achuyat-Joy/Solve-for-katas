@@ -1183,3 +1183,11 @@ function integrate(coefficient, exponent) {
 }
 
 console.log(integrate(3, 2));
+
+// 80. USD => CNY (1usd = 6.75cny)
+
+function usdcny(usd) {
+  return `${(usd * 6.75).toFixed(2)} Chinese Yuan`;
+}
+
+console.log(usdcny(5936));
