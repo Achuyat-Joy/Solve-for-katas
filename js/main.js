@@ -1191,3 +1191,11 @@ function usdcny(usd) {
 }
 
 console.log(usdcny(5936));
+
+// 81. Contamination #1 -String- (replace text with char, same length)
+
+function contamination(text, char) {
+  return char.repeat(text.length);
+}
+
+console.log(contamination("abc", ""));
