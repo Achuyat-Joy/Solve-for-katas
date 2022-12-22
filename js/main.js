@@ -1199,3 +1199,12 @@ function contamination(text, char) {
 }
 
 console.log(contamination("abc", ""));
+
+// 82. FIXME: Replace all dots
+
+var replaceDots = function (str) {
+  console.log(str);
+  return str.replace(/\./g, "-");
+};
+
+console.log(replaceDots("abc.abc.ds"));
