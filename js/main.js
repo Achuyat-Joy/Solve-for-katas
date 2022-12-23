@@ -1208,3 +1208,11 @@ var replaceDots = function (str) {
 };
 
 console.log(replaceDots("abc.abc.ds"));
+
+// 83. Capitalization and Mutability
+
+function capitalizeWord(word) {
+  return word.replace(/^./g, (s) => s.toUpperCase());
+}
+
+console.log(capitalizeWord("word"));
