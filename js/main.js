@@ -1216,3 +1216,11 @@ function capitalizeWord(word) {
 }
 
 console.log(capitalizeWord("word"));
+
+// 84. Aspect Ratio Cropping - Part 1 (rounding resolution to 16:9)
+
+function aspectRatio(x, y) {
+  return [Math.ceil(y * (16 / 9)), y];
+}
+
+console.log(aspectRatio(640, 480));
