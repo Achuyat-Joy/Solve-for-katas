@@ -1236,3 +1236,19 @@ function isPythagoreanTriple(integers) {
 }
 
 console.log(isPythagoreanTriple([4, 3, 5]));
+
+// 86. 8kyu interpreters: HQ9+ (return according to input)
+
+function HQ9(code) {
+  if (code == "H") {
+    return "Hello World!";
+  } else if (code == "9") {
+    return "99 bottles of beer on the wall, 99 bottles of beer.\nTake one down and pass it around, 98 bottles of beer on the wall.etc";
+  } else if (code == "Q") {
+    return code;
+  } else {
+    return undefined;
+  }
+}
+
+console.log(HQ9("9"));
