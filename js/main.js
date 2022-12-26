@@ -1224,3 +1224,15 @@ function aspectRatio(x, y) {
 }
 
 console.log(aspectRatio(640, 480));
+
+// 85. Pythagorean Triple a^2+b^2 = c^2
+
+function isPythagoreanTriple(integers) {
+  integers = integers.sort((a, b) => a - b);
+
+  let [d, e, f] = [...integers];
+
+  return Math.pow(d, 2) + Math.pow(e, 2) == Math.pow(f, 2);
+}
+
+console.log(isPythagoreanTriple([4, 3, 5]));
