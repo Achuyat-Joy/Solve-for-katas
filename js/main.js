@@ -1252,3 +1252,27 @@ function HQ9(code) {
 }
 
 console.log(HQ9("9"));
+
+// 87. Find out whether the shape is a cube
+
+var cubeChecker = function (volume, side) {
+  console.log(volume, side);
+  if (volume <= 0 || side <= 0) {
+    return false;
+  } else if (volume % side == 0) {
+    let result = volume / side;
+    if (result % Math.sqrt(result) == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+};
+
+console.log(cubeChecker(6400, 16));
+
+shortcut: var cubeChecker = function (volume, side) {
+  return Math.pow(side, 3) === volume && side > 0;
+};
