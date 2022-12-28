@@ -1273,6 +1273,34 @@ var cubeChecker = function (volume, side) {
 
 console.log(cubeChecker(6400, 16));
 
-shortcut: var cubeChecker = function (volume, side) {
+// shortcut:
+
+var cubeChecker = function (volume, side) {
   return Math.pow(side, 3) === volume && side > 0;
 };
+
+// 88. All Star Code Challenge #18 (check the number of given word occurance in the letter)
+
+function strCount(str, letter) {
+  if (str == "") {
+    return 0;
+  }
+
+  let count = 0;
+
+  str = str.split("");
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == letter) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(strCount("", "o"));
+
+// shortcut:
+
+str.split("letter").length;
