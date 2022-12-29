@@ -1304,3 +1304,14 @@ console.log(strCount("", "o"));
 // shortcut:
 
 str.split("letter").length;
+
+// 89. Difference of Volumes of Cuboids (multiply array elements and deduct the difference between two arrays)
+
+function findDifference(a, b) {
+  a = a.reduce((a, b) => a * b, 1);
+  b = b.reduce((a, b) => a * b, 1);
+
+  return Math.abs(a - b);
+}
+
+console.log(findDifference([3, 2, 5], [1, 4, 4]));
