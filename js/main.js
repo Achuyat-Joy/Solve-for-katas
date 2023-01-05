@@ -1315,3 +1315,11 @@ function findDifference(a, b) {
 }
 
 console.log(findDifference([3, 2, 5], [1, 4, 4]));
+
+// 90. BASIC: Making Six Toast.
+
+function sixToast(num) {
+  return Math.abs(num - 6);
+}
+
+console.log(sixToast(3));
