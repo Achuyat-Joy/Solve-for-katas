@@ -1323,3 +1323,11 @@ function sixToast(num) {
 }
 
 console.log(sixToast(3));
+
+// 91. ES6 string addition
+
+function joinStrings(string1, string2) {
+  return `${string1} ${string2}`;
+}
+
+console.log(joinStrings("abc", "def"));
