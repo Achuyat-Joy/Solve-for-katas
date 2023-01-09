@@ -1331,3 +1331,15 @@ function joinStrings(string1, string2) {
 }
 
 console.log(joinStrings("abc", "def"));
+
+// 92. For UFC Fans (Total Beginners): Conor McGregor vs George Saint Pierre
+
+var quote = function (fighter) {
+  return /George Saint Pierre/i.test(fighter)
+    ? "I am not impressed by your performance."
+    : /conor mcgregor/i.test(fighter)
+    ? "I'd like to take this chance to apologize.. To absolutely NOBODY!"
+    : "problem";
+};
+
+console.log(quote("George Saint pIerre"));
