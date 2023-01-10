@@ -1343,3 +1343,13 @@ var quote = function (fighter) {
 };
 
 console.log(quote("George Saint pIerre"));
+
+// 93. Volume of a Cuboid
+
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
+
+console.log(getVolumeOfCuboid(2, 2, 1));
