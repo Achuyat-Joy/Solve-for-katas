@@ -1363,3 +1363,66 @@ function apple(x) {
 }
 
 console.log(apple(50));
+
+// 95. Alan Partridge I - Partridge Watch
+
+function part(x) {
+  let s = 0;
+  let n = "Mine's a Pint";
+
+  x.filter((val) => {
+    if (/Partridge/i.test(val)) {
+      s++;
+      n += "!";
+    } else if (/PearTree/i.test(val)) {
+      s++;
+      n += "!";
+    } else if (/Chat/i.test(val)) {
+      s++;
+      n += "!";
+    } else if (/Dan/i.test(val)) {
+      s++;
+      n += "!";
+    } else if (/Toblerone/i.test(val)) {
+      s++;
+      n += "!";
+    } else if (/Lynn/i.test(val)) {
+      s++;
+      n += "!";
+    } else if (/AlphaPapa/i.test(val)) {
+      s++;
+      n += "!";
+    } else if (/Nomad/i.test(val)) {
+      s++;
+      n += "!";
+    }
+  });
+
+  return s > 0 ? n : "Lynn, I've pierced my foot on a spike!!";
+}
+
+console.log(
+  part([
+    "Grouse",
+    "Partridge",
+    "Pheasant",
+    "Goose",
+    "Starling",
+    "Robin",
+    "Thrush",
+    "Emu",
+    "PearTree",
+    "Chat",
+    "Dan",
+    "Square",
+    "Toblerone",
+    "Lynn",
+    "AlphaPapa",
+    "BMW",
+    "Graham",
+    "Tool",
+    "Nomad",
+    "Finger",
+    "Hamster",
+  ])
+);
