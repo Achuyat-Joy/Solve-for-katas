@@ -1426,3 +1426,35 @@ console.log(
     "Hamster",
   ])
 );
+
+// 96. Alan Partridge III - London
+
+function part(x) {
+  let arr = [
+    "Rejection",
+    "Disappointment",
+    "Backstabbing Central",
+    "Shattered Dreams Parkway",
+  ];
+
+  x.filter((val) => {
+    if (arr.includes(val)) {
+      arr.splice(arr.indexOf(val), 1);
+    }
+  });
+
+  return arr.length == 0
+    ? "Smell my cheese you mother!"
+    : "No, seriously, run. You will miss it.";
+}
+
+console.log(
+  part([
+    "Norwich",
+    "Rejection",
+    "Disappointment",
+    "Backstabbing Central",
+    "Shattered Dreams Parkway",
+    "London",
+  ])
+);
