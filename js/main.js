@@ -1477,3 +1477,11 @@ function datingRange(age) {
 }
 
 console.log(datingRange(17));
+
+// 98. Beginner - Lost Without a Map (double each element of the array)
+
+function maps(x) {
+  return x.map((val) => val * 2);
+}
+
+console.log(maps([1, 2, 3]));
