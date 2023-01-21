@@ -1509,3 +1509,13 @@ function remove(string) {
 }
 
 console.log(string("Hi!"));
+
+// 103. Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
+
+function remove(string) {
+  string = string.replace(/!*/gi, "");
+
+  return string + "!";
+}
+
+console.log(remove("Hi!!!"));
