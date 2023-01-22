@@ -1519,3 +1519,11 @@ function remove(string) {
 }
 
 console.log(remove("Hi!!!"));
+
+// 104. Simple Comparison?
+
+function add(a, b) {
+  return a == b;
+}
+
+console.log(add("1", 1));
