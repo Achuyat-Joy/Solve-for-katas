@@ -1527,3 +1527,13 @@ function add(a, b) {
 }
 
 console.log(add("1", 1));
+
+// 105. To square(root) or not to square(root)
+
+function squareOrSquareRoot(array) {
+  return array.map((val) => {
+    return Math.sqrt(val) % 1 == 0 ? Math.sqrt(val) : Math.pow(val, 2);
+  });
+}
+
+console.log(squareOrSquareRoot([1, 2, 3, 4]));
