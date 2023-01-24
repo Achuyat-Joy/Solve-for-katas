@@ -1537,3 +1537,20 @@ function squareOrSquareRoot(array) {
 }
 
 console.log(squareOrSquareRoot([1, 2, 3, 4]));
+
+// 106. I love you, a little , a lot, passionately ... not at all
+
+function howMuchILoveYou(nbPetals) {
+  const say = {
+    1: "I love you",
+    2: "a little",
+    3: "a lot",
+    4: "passionately",
+    5: "madly",
+    0: "not at all",
+  };
+
+  return say[nbPetals % 6];
+}
+
+console.log(howMuchILoveYou(5));
