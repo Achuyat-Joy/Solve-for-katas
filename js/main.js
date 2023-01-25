@@ -1554,3 +1554,11 @@ function howMuchILoveYou(nbPetals) {
 }
 
 console.log(howMuchILoveYou(5));
+
+// 107. Sum Mixed Array
+
+function sumMix(x) {
+  return x.reduce((a, b) => a + parseInt(b), 0);
+}
+
+console.log(sumMix([9, 3, "7", "3"]));
