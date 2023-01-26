@@ -1562,3 +1562,11 @@ function sumMix(x) {
 }
 
 console.log(sumMix([9, 3, "7", "3"]));
+
+// 108. You only need one - Beginner
+
+function check(a, x) {
+  return a.includes(x);
+}
+
+console.log(check([1, 2, 3, 4], 1));
