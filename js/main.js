@@ -1570,3 +1570,11 @@ function check(a, x) {
 }
 
 console.log(check([1, 2, 3, 4], 1));
+
+// 108. You only need one - Beginner
+
+function check(a, x) {
+  return a.includes(x);
+}
+
+console.log(check([1, 2, 3, 4], 1));
