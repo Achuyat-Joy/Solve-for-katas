@@ -1578,3 +1578,17 @@ function check(a, x) {
 }
 
 console.log(check([1, 2, 3, 4], 1));
+
+// 109. Hello, Name or World!
+
+function hello(name) {
+  if (name == "" || name == undefined) {
+    return `Hello, World!`;
+  } else {
+    name = name.toLowerCase();
+    name = name.replace(/^./g, (s) => s.toUpperCase());
+    return `Hello, ${name}!`;
+  }
+}
+
+console.log(hello());
