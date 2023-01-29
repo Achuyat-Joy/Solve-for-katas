@@ -1592,3 +1592,25 @@ function hello(name) {
 }
 
 console.log(hello());
+
+// 110. Well of Ideas - Easy Version
+
+function well(x) {
+  let count = 0;
+
+  x.filter((val) => {
+    if (val == "good") {
+      count++;
+    }
+  });
+
+  return count == 1
+    ? "Publish!"
+    : count == 2
+    ? "Publish!"
+    : count > 2
+    ? "I smell a series!"
+    : "Fail!";
+}
+
+console.log(well(["good", "good"]));
