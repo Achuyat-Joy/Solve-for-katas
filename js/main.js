@@ -1614,3 +1614,32 @@ function well(x) {
 }
 
 console.log(well(["good", "good"]));
+
+// 111. Filter out the geese
+
+function gooseFilter(birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+
+  let array = [...birds];
+
+  for (let i = 0; i < birds.length; i++) {
+    for (let j = 0; j < geese.length; j++) {
+      if (birds[i] == geese[j]) {
+        array.splice(array.indexOf(birds[i]), 1);
+      }
+    }
+  }
+  return array;
+}
+
+console.log(
+  gooseFilter([
+    "Mallard",
+    "Hook Bill",
+    "African",
+    "Crested",
+    "Pilgrim",
+    "Toulouse",
+    "Blue Swedish",
+  ])
+);
