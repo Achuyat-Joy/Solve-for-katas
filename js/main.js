@@ -1643,3 +1643,11 @@ console.log(
     "Blue Swedish",
   ])
 );
+
+// 112. Convert a string to an array
+
+function stringToArray(string) {
+  return string.split(" ");
+}
+
+console.log(stringToArray("Robin Singh"));
