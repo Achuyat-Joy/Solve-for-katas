@@ -1651,3 +1651,11 @@ function stringToArray(string) {
 }
 
 console.log(stringToArray("Robin Singh"));
+
+// 113. String cleaning
+
+function stringToArray(string) {
+  return string.replace(/[0-9]/g, "");
+}
+
+console.log(stringToArray("65151"));
