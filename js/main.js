@@ -1659,3 +1659,28 @@ function stringToArray(string) {
 }
 
 console.log(stringToArray("65151"));
+
+// 114. Is there a vowel in there?
+
+function isVow(a) {
+  for (let i = 0; i < a.length; i++) {
+    if (
+      String.fromCharCode(a[i]) == "a" ||
+      String.fromCharCode(a[i]) == "e" ||
+      String.fromCharCode(a[i]) == "i" ||
+      String.fromCharCode(a[i]) == "o" ||
+      String.fromCharCode(a[i]) == "u"
+    ) {
+      a[i] = String.fromCharCode(a[i]);
+    }
+  }
+
+  return a;
+}
+
+console.log(
+  isVow([
+    118, 117, 120, 121, 117, 98, 122, 97, 120, 106, 104, 116, 113, 114, 113,
+    120, 106,
+  ])
+);
