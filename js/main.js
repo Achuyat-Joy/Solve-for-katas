@@ -1684,3 +1684,11 @@ console.log(
     120, 106,
   ])
 );
+
+// 115. The Wide-Mouthed frog!
+
+function mouthSize(animal) {
+  return /alligator/i.test(animal) ? "small" : "wide";
+}
+
+console.log(mouthSize("ad"));
