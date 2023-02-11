@@ -1692,3 +1692,19 @@ function mouthSize(animal) {
 }
 
 console.log(mouthSize("ad"));
+
+// 116. Is n divisible by x and y?
+
+function isDivisible(n, x, y) {
+  if (n % x == 0) {
+    if (n % y == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
+
+console.log(isDivisible(3, 3, 4));
