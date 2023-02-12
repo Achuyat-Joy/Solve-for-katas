@@ -1708,3 +1708,18 @@ function isDivisible(n, x, y) {
 }
 
 console.log(isDivisible(3, 3, 4));
+
+// 117. Convert number to reversed array of digits
+
+function digitize(n) {
+  return n.toString().split("").map(Number).reverse();
+  // let a = []
+
+  // for(let i = n.length-1; i>=0; i--){
+  //   a.push(+n[i]);
+  // }
+
+  // return a;
+}
+
+console.log(digitize(54321));
