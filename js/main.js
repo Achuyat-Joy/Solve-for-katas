@@ -1723,3 +1723,11 @@ function digitize(n) {
 }
 
 console.log(digitize(54321));
+
+// 118.Returning Strings
+
+function greet(name) {
+  return `Hello, ${name} how are you doing today?`;
+}
+
+console.log(greet("Joy"));
