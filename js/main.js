@@ -1731,3 +1731,21 @@ function greet(name) {
 }
 
 console.log(greet("Joy"));
+
+// 119. Opposites Attract
+
+function lovefunc(flower1, flower2) {
+  if (flower1 % 2 == 0) {
+    if (flower2 % 2 != 0) {
+      return true;
+    } else {
+      return false;
+    }
+  } else if (flower2 % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(lovefunc(3, 2));
