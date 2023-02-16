@@ -1749,3 +1749,30 @@ function lovefunc(flower1, flower2) {
 }
 
 console.log(lovefunc(3, 2));
+
+// 120. Count of positives / sum of negatives
+
+function countPositivesSumNegatives(input) {
+  let count = 0;
+  let sum = 0;
+
+  if (input == null) {
+    return [];
+  } else if (!input.length) {
+    return input;
+  } else {
+    input.filter((val) => {
+      if (val > 0) {
+        count++;
+      } else {
+        sum += val;
+      }
+    });
+  }
+
+  let a = [count, sum];
+
+  return a;
+}
+
+console.log(countPositivesSumNegatives());
