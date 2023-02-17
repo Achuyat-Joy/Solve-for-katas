@@ -1784,3 +1784,15 @@ function booleanToString(b) {
 }
 
 console.log(booleanToString(true));
+
+// 122. Are You Playing Banjo?
+
+function areYouPlayingBanjo(name) {
+  if (/^r/i.test(name)) {
+    return `${name} plays banjo`;
+  } else {
+    return `${name} does not play banjo`;
+  }
+}
+
+console.log(areYouPlayingBanjo("Adam"));
