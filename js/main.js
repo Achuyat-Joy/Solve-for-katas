@@ -1776,3 +1776,11 @@ function countPositivesSumNegatives(input) {
 }
 
 console.log(countPositivesSumNegatives());
+
+// 121. Convert a Boolean to a String
+
+function booleanToString(b) {
+  return b.toString();
+}
+
+console.log(booleanToString(true));
