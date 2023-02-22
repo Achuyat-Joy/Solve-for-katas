@@ -1796,3 +1796,17 @@ function areYouPlayingBanjo(name) {
 }
 
 console.log(areYouPlayingBanjo("Adam"));
+
+// 123. Calculate average
+
+function findAverage(array) {
+  if (array == null || array.length == 0) {
+    return 0;
+  } else {
+    let a = array.reduce((a, b) => a + b, 0);
+
+    return a / array.length;
+  }
+}
+
+console.log(findAverage([1, 2, 3]));
