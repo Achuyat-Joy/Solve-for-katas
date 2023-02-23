@@ -1810,3 +1810,11 @@ function findAverage(array) {
 }
 
 console.log(findAverage([1, 2, 3]));
+
+// 124. Beginner Series #1 School Paperwork
+
+function paperwork(n, m) {
+  return n < 0 ? 0 : m < 0 ? 0 : n * m;
+}
+
+console.log(paperwork(5, 5));
