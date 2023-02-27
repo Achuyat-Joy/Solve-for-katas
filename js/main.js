@@ -1818,3 +1818,13 @@ function paperwork(n, m) {
 }
 
 console.log(paperwork(5, 5));
+
+// 125.How good are you really?
+
+function betterThanAverage(classPoints, yourPoints) {
+  let a = classPoints.reduce((a, b) => a + b, 0);
+
+  return a / classPoints.length < yourPoints ? true : false;
+}
+
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75));
