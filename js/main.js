@@ -1828,3 +1828,11 @@ function betterThanAverage(classPoints, yourPoints) {
 }
 
 console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75));
+
+// 126.Sum Arrays
+
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum([1, 5.2, 4, 0, -1]));
