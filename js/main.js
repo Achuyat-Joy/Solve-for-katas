@@ -1836,3 +1836,11 @@ function sum(numbers) {
 }
 
 console.log(sum([1, 5.2, 4, 0, -1]));
+
+// 127. Reversed Words
+
+function reverseWords(str) {
+  return str.split(" ").reverse().join(" ");
+}
+
+console.log(reverseWords("hello world!"));
