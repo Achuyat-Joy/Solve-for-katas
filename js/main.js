@@ -1844,3 +1844,11 @@ function reverseWords(str) {
 }
 
 console.log(reverseWords("hello world!"));
+
+// 128. MakeUpperCase
+
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
+
+console.log(makeUpperCase("hello"));
