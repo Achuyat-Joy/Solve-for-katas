@@ -1879,3 +1879,13 @@ var max = function (list) {
 
 console.log(min([-52, 56, 30, 29, -54, 0, -110]));
 console.log(max([-52, 56, 30, 29, -54, 0, -110]));
+
+// 131. Jenny's secret message
+
+function greet(name) {
+  if (name === "Johnny") {
+    return "Hello, my love!";
+  } else {
+    return "Hello, " + name + "!";
+  }
+}
