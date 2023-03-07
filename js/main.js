@@ -1889,3 +1889,26 @@ function greet(name) {
     return "Hello, " + name + "!";
   }
 }
+
+// 132. Rock Paper Scissors!
+
+const rps = (p1, p2) => {
+  let t1 = "Player 1 won!";
+  let t2 = "Player 2 won!";
+
+  return p1 == "rock" && p2 == "scissors"
+    ? t1
+    : p2 == "rock" && p1 == "scissors"
+    ? t2
+    : p1 == "paper" && p2 == "scissors"
+    ? t2
+    : p2 == "paper" && p1 == "scissors"
+    ? t1
+    : p1 == "paper" && p2 == "rock"
+    ? t1
+    : p2 == "paper" && p1 == "rock"
+    ? t2
+    : "Draw!";
+};
+
+console.log(rps("rock", "scissors"));
