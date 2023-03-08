@@ -1912,3 +1912,17 @@ const rps = (p1, p2) => {
 };
 
 console.log(rps("rock", "scissors"));
+
+// 133. Count the Monkeys!
+
+function monkeyCount(n) {
+  let a = [];
+
+  for (let i = 1; i <= n; i++) {
+    a.push(i);
+  }
+
+  return a;
+}
+
+console.log(monkeyCount(5));
