@@ -1926,3 +1926,11 @@ function monkeyCount(n) {
 }
 
 console.log(monkeyCount(5));
+
+// 134. Do I get a bonus?
+
+function bonusTime(salary, bonus) {
+  return bonus ? `£${salary * 10}` : `£${salary}`;
+}
+
+console.log(bonusTime(2, true));
