@@ -1985,3 +1985,13 @@ function getGrade(s1, s2, s3) {
 }
 
 console.log(getGrade(95, 0, 3));
+
+// 139. Remove exclamation marks
+
+function removeExclamationMarks(s) {
+  return s.replace(/!+/g, "");
+}
+
+console.log(
+  removeExclamationMarks("wKiZRbvUpE!tWdtTzvTmJ pmONiDTgOL!HwUzlZdYjN")
+);
