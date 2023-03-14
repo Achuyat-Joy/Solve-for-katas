@@ -1967,3 +1967,21 @@ function getPlanetName(id) {
 
   return name;
 }
+
+// 138. Grasshopper - Grade book
+
+function getGrade(s1, s2, s3) {
+  let a = (s1 + s2 + s3) / 3;
+
+  return a >= 90
+    ? "A"
+    : a >= 80 && a < 90
+    ? "B"
+    : a >= 70 && a < 80
+    ? "C"
+    : a >= 60 && a < 70
+    ? "D"
+    : "F";
+}
+
+console.log(getGrade(95, 0, 3));
