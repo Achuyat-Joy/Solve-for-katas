@@ -1995,3 +1995,17 @@ function removeExclamationMarks(s) {
 console.log(
   removeExclamationMarks("wKiZRbvUpE!tWdtTzvTmJ pmONiDTgOL!HwUzlZdYjN")
 );
+
+// 140. Removing Elements
+
+function removeEveryOther(arr) {
+  let a = [];
+
+  for (let i = 0; i <= arr.length - 1; i += 2) {
+    a.push(arr[i]);
+  }
+
+  return a;
+}
+
+console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
