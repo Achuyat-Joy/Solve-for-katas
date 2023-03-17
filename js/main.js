@@ -2009,3 +2009,11 @@ function removeEveryOther(arr) {
 }
 
 console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// 141. Correct the mistakes of the character recognition software
+
+function correct(string) {
+  return string.replace(/0/g, "O").replace(/5/g, "S").replace(/1/g, "I");
+}
+
+console.log(correct("VJVYENLTBH0000WP"));
