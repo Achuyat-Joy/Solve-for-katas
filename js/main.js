@@ -2017,3 +2017,11 @@ function correct(string) {
 }
 
 console.log(correct("VJVYENLTBH0000WP"));
+
+// 142. Sentence Smash
+
+function smash(words) {
+  return words.join(" ");
+}
+
+console.log(smash(["hello", "world"]));
