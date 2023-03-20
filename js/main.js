@@ -2039,3 +2039,10 @@ function powersOfTwo(n) {
 }
 
 console.log(powersOfTwo(4));
+
+// 144. You Can't Code Under Pressure #1
+
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i*2;
+}
