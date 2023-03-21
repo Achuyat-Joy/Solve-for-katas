@@ -2044,5 +2044,20 @@ console.log(powersOfTwo(4));
 
 function doubleInteger(i) {
   // i will be an integer. Double it and return it.
-  return i*2;
+  return i * 2;
 }
+
+// 145. Sum without highest and lowest number
+
+function sumArray(array) {
+  if (array == null) {
+    return 0;
+  }
+  array = array.sort((a, b) => a - b);
+  array.pop();
+  array.shift();
+
+  return array.reduce((a, b) => a + b, 0);
+}
+
+console.log(sumArray(null));
