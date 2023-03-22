@@ -2061,3 +2061,24 @@ function sumArray(array) {
 }
 
 console.log(sumArray(null));
+
+// 146. Fake Binary
+
+function fakeBin(x) {
+  return (x = x
+    .split("")
+    .map((val) => (val < 5 ? 0 : 1))
+    .join(""));
+
+  // for(let i=0;i<x.length;i++){
+  //   if(x[i]<5){
+  //     x[i]=0;
+  //   }else{
+  //     x[i]=1;
+  //   }
+  // }
+
+  // return x.join('').toString();
+}
+
+console.log(fakeBin("45385593107843568"));
