@@ -2082,3 +2082,9 @@ function fakeBin(x) {
 }
 
 console.log(fakeBin("45385593107843568"));
+
+// 147. L1: Set Alarm
+
+function setAlarm(employed, vacation) {
+  return employed == true && vacation == false ? true : false;
+}
