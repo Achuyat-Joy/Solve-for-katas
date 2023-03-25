@@ -2096,3 +2096,19 @@ function cockroachSpeed(s) {
 }
 
 console.log(cockroachSpeed(1));
+
+// 149. Is it a palindrome?
+
+function isPalindrome(x) {
+  x = x.toLowerCase();
+
+  let word = "";
+
+  for (let i = x.length - 1; i >= 0; i--) {
+    word += x[i];
+  }
+
+  return x === word;
+}
+
+console.log(isPalindrome("abba"));
