@@ -2088,3 +2088,11 @@ console.log(fakeBin("45385593107843568"));
 function setAlarm(employed, vacation) {
   return employed == true && vacation == false ? true : false;
 }
+
+// 148. km/h to cm/s (Beginner Series #4 Cockroach)
+
+function cockroachSpeed(s) {
+  return Math.floor(s * 27.7778);
+}
+
+console.log(cockroachSpeed(1));
