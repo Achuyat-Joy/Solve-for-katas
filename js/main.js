@@ -2128,3 +2128,11 @@ function past(h, m, s) {
 }
 
 console.log(past(0, 1, 1));
+
+// 152. DNA to RNA Conversion
+
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, "U");
+}
+
+console.log(DNAtoRNA("GACCGCCGCC"));
