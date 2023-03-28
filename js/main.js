@@ -2120,3 +2120,11 @@ function divisibleBy(numbers, divisor) {
 }
 
 console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2));
+
+// 151. Beginner Series #2 Clock (to milisecond)
+
+function past(h, m, s) {
+  return (h * 60 * 60 + m * 60 + s) * 1000;
+}
+
+console.log(past(0, 1, 1));
