@@ -2136,3 +2136,13 @@ function DNAtoRNA(dna) {
 }
 
 console.log(DNAtoRNA("GACCGCCGCC"));
+
+// 153. Get the mean of an array
+
+function getAverage(marks) {
+  let mark = marks.reduce((a, b) => a + b, 0);
+
+  return Math.floor(mark / marks.length);
+}
+
+console.log(getAverage([2, 2, 2, 2, 3]));
