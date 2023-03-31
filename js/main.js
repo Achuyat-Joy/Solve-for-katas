@@ -2146,3 +2146,13 @@ function getAverage(marks) {
 }
 
 console.log(getAverage([2, 2, 2, 2, 3]));
+
+// 154. Keep up the hoop
+
+function hoopCount(n) {
+  return n >= 10
+    ? "Great, now move on to tricks"
+    : "Keep at it until you get it";
+}
+
+console.log(hoopCount(3));
