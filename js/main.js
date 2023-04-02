@@ -2164,3 +2164,18 @@ function checkForFactor(base, factor) {
 }
 
 console.log(checkForFactor(9, 3));
+
+// 156. Double Char
+
+function doubleChar(str) {
+  // let a = '';
+  // str = str.split('').filter(val=>a+=val+val)
+  // return a;
+
+  return str
+    .split("")
+    .map((val) => val + val)
+    .join("");
+}
+
+console.log(doubleChar("abcd"));
