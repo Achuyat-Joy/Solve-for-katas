@@ -2179,3 +2179,11 @@ function doubleChar(str) {
 }
 
 console.log(doubleChar("abcd"));
+
+// 157. Parse nice int from char problem
+
+function getAge(inputString) {
+  return parseInt(inputString[0]);
+}
+
+console.log(getAge("4 years old"));
