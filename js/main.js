@@ -2187,3 +2187,31 @@ function getAge(inputString) {
 }
 
 console.log(getAge("4 years old"));
+
+// 158. Welcome! (in different languages)
+
+function greet(language) {
+  const here = {
+    english: "Welcome",
+    czech: "Vitejte",
+    danish: "Velkomst",
+    dutch: "Welkom",
+    estonian: "Tere tulemast",
+    finnish: "Tervetuloa",
+    flemish: "Welgekomen",
+    french: "Bienvenue",
+    german: "Willkommen",
+    irish: "Failte",
+    italian: "Benvenuto",
+    latvian: "Gaidits",
+    lithuanian: "Laukiamas",
+    polish: "Witamy",
+    spanish: "Bienvenido",
+    swedish: "Valkommen",
+    welsh: "Croeso",
+  };
+
+  return here[language] == undefined ? "Welcome" : here[language];
+}
+
+console.log(greet("dutch"));
