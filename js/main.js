@@ -2215,3 +2215,21 @@ function greet(language) {
 }
 
 console.log(greet("dutch"));
+
+// 159. altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+function toAlternatingCase(string) {
+  string = string.split("");
+
+  for (let i = 0; i <= string.length - 1; i++) {
+    if (string[i] == string[i].toUpperCase()) {
+      string[i] = string[i].toLowerCase();
+    } else {
+      string[i] = string[i].toUpperCase();
+    }
+  }
+
+  return string.join("");
+}
+
+console.log(toAlternatingCase("aaBBcc"));
