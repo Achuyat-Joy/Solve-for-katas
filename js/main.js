@@ -2245,3 +2245,9 @@ function createArray(number) {
 
   return newArray;
 }
+
+// 161. Grasshopper - Messi goals function
+
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
