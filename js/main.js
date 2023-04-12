@@ -2251,3 +2251,15 @@ function createArray(number) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+
+// 162. What is between?
+
+function between(a, b) {
+  let c = [];
+
+  for (let i = a; i <= b; i++) {
+    c.push(i);
+  }
+
+  return c;
+}
