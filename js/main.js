@@ -2263,3 +2263,9 @@ function between(a, b) {
 
   return c;
 }
+
+// 163. Grasshopper - Debug sayHello
+
+function sayHello(name) {
+  return `Hello, ${name}`;
+}
