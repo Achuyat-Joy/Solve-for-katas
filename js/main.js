@@ -2281,3 +2281,11 @@ function saleHotdogs(n) {
 function move(position, roll) {
   return roll * 2 + position;
 }
+
+// 166. My head is at the wrong end!
+
+function fixTheMeerkat(arr) {
+  return arr.reverse();
+}
+
+console.log(fixTheMeerkat(["he", "she", "have"]));
