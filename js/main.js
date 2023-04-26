@@ -2289,3 +2289,9 @@ function fixTheMeerkat(arr) {
 }
 
 console.log(fixTheMeerkat(["he", "she", "have"]));
+
+// 167. Function 2 - squaring an argument
+
+function square(s) {
+  return Math.pow(s, 2);
+}
