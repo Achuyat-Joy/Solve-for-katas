@@ -2295,3 +2295,15 @@ console.log(fixTheMeerkat(["he", "she", "have"]));
 function square(s) {
   return Math.pow(s, 2);
 }
+
+// 168. N-th Power
+
+function index(array, n) {
+  if (array[n] == undefined) {
+    return -1;
+  } else {
+    return Math.pow(array[n], n);
+  }
+}
+
+console.log(index([2, 2, 2], 2));
