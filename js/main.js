@@ -2307,3 +2307,13 @@ function index(array, n) {
 }
 
 console.log(index([2, 2, 2], 2));
+
+// 169. Grasshopper - If/else syntax debug
+
+function checkAlive(health) {
+  if (health <= 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
