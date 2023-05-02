@@ -2317,3 +2317,15 @@ function checkAlive(health) {
     return true;
   }
 }
+
+// 170. Super Duper Easy (check if it is string and if not then multiply and add)
+
+function problem(x) {
+  if (typeof x == "string") {
+    return "Error";
+  } else {
+    return x * 50 + 6;
+  }
+}
+
+console.log(problem(1));
