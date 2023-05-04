@@ -2329,3 +2329,11 @@ function problem(x) {
 }
 
 console.log(problem(1));
+
+// 171. Vowel remover
+
+function shortcut(string) {
+  return string.replace(/[aeiou]/gi, "");
+}
+
+console.log(shortcut("codewars"));
