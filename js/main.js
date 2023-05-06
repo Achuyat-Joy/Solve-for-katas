@@ -2337,3 +2337,26 @@ function shortcut(string) {
 }
 
 console.log(shortcut("codewars"));
+
+// 172. Stringy Strings
+
+function stringy(size) {
+  let ans = "";
+
+  if (size % 2 == 0) {
+    for (let i = 1; i <= size / 2; i++) {
+      ans += "10";
+    }
+  } else if (size == 1) {
+    ans += "1";
+  } else {
+    for (let i = 1; i <= size / 2; i++) {
+      ans += "10";
+    }
+    ans += "1";
+  }
+
+  return ans;
+}
+
+console.log(stringy(1));
