@@ -2374,3 +2374,11 @@ function helloWorld() {
 function getRealFloor(n) {
   return n <= 0 ? n : n > 0 && n < 13 ? n - 1 : n - 2;
 }
+
+// 175. Name Shuffler
+
+function nameShuffler(str) {
+  return str.replace(/(\w+)\s(\w+\W*\w+)/, "$2 $1");
+}
+
+console.log(nameShuffler("William Brien"));
