@@ -2382,3 +2382,11 @@ function nameShuffler(str) {
 }
 
 console.log(nameShuffler("William Brien"));
+
+// 176. Reverse List Order
+
+function reverseList(list) {
+  return list.reverse();
+}
+
+console.log(reverseList([1, 2, 3, 4]));
