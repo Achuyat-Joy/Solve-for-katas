@@ -2390,3 +2390,10 @@ function reverseList(list) {
 }
 
 console.log(reverseList([1, 2, 3, 4]));
+
+// 177. Grasshopper - Basic Function Fixer
+
+function addFive(num) {
+  var total = num + 5;
+  return total;
+}
