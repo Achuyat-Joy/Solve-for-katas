@@ -2397,3 +2397,11 @@ function addFive(num) {
   var total = num + 5;
   return total;
 }
+
+// 178. Short Long Short
+
+function solution(a, b) {
+  return a.length > b.length ? b + a + b : a + b + a;
+}
+
+console.log(solution("2", "11"));
