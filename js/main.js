@@ -2411,3 +2411,11 @@ console.log(solution("2", "11"));
 function xor(a, b) {
   return a == b ? false : true;
 }
+
+// 180. Reversing Words in a String
+
+function reverse(string) {
+  return string.split(" ").reverse().join(" ");
+}
+
+console.log(reverse("Hello World."));
