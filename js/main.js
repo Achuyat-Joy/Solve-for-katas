@@ -2419,3 +2419,19 @@ function reverse(string) {
 }
 
 console.log(reverse("Hello World."));
+
+// 181. Lario and Muigi Pipe Problem (sort by getting the lowest and highest from the array)
+
+function pipeFix(numbers) {
+  numbers = numbers.sort((a, b) => a - b);
+
+  let fix = [];
+
+  for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+    fix.push(i);
+  }
+
+  return fix;
+}
+
+console.log(pipeFix([1, 2, 3, 12]));
