@@ -2435,3 +2435,15 @@ function pipeFix(numbers) {
 }
 
 console.log(pipeFix([1, 2, 3, 12]));
+
+// 182. drink about (what to drink according to age)
+
+function peopleWithAgeDrink(old) {
+  return old < 14
+    ? "drink toddy"
+    : old < 18
+    ? "drink coke"
+    : old < 21
+    ? "drink beer"
+    : "drink whisky";
+}
