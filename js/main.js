@@ -2462,3 +2462,17 @@ function convertToCelsius(temperature) {
 }
 
 console.log(weatherInfo(56));
+
+// 184. Generate range of integers
+
+function generateRange(min, max, step) {
+  let ans = [];
+
+  for (let i = min; i <= max; i += step) {
+    ans.push(i);
+  }
+
+  return ans;
+}
+
+console.log(generateRange(2, 10, 2));
