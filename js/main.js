@@ -2510,3 +2510,19 @@ function correctTail(body, tail) {
     return false;
   }
 }
+
+// 187. Add Length
+
+function addLength(str) {
+  str = str.split(" ");
+
+  let ans = [];
+
+  for (let i = 0; i < str.length; i++) {
+    ans.push(str[i] + " " + str[i].length);
+  }
+
+  return ans;
+}
+
+console.log(addLength("apple ban"));
