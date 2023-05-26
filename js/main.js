@@ -2526,3 +2526,13 @@ function addLength(str) {
 }
 
 console.log(addLength("apple ban"));
+
+// 188. String Templates - Bug Fixing #5
+
+function buildString(...template) {
+  // template = template.join(', ');
+  // console.log(template)
+  return `I like ${template.join(", ")}!`;
+}
+
+console.log(buildString("Cheese", "Milk", "Chocolate"));
