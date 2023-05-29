@@ -2536,3 +2536,20 @@ function buildString(...template) {
 }
 
 console.log(buildString("Cheese", "Milk", "Chocolate"));
+
+// 189. Triple Trouble
+
+function tripleTrouble(one, two, three) {
+  let here = [one, two, three];
+  let answer = "";
+
+  for (let i = 0; i < here[0].length; i++) {
+    for (let k = 0; k < here.length; k++) {
+      answer += here[k][i];
+    }
+  }
+
+  return answer;
+}
+
+console.log(tripleTrouble("burn", "reds", "roll"));
