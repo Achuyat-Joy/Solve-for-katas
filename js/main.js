@@ -2553,3 +2553,11 @@ function tripleTrouble(one, two, three) {
 }
 
 console.log(tripleTrouble("burn", "reds", "roll"));
+
+// 190. No zeros for heros
+
+function noBoringZeros(n) {
+  n = n.toString().replace(/0*$/, "");
+
+  return +n;
+}
