@@ -2601,3 +2601,9 @@ function equal5() {
     b = v3; //set number value to b
   return a % b;
 }
+
+// 192. get character from ASCII Value
+
+function getChar(c) {
+  return String.fromCharCode(c);
+}
