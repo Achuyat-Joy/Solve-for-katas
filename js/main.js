@@ -2646,3 +2646,14 @@ function rainAmount(mm) {
     return "Your plant has had more than enough water for today!";
   }
 }
+
+// 195. SpeedCode #2 - Array Madness
+
+function arrayMadness(a, b) {
+  a = a.reduce((c, d) => c + Math.pow(d, 2), 0);
+  b = b.reduce((e, f) => e + Math.pow(f, 3), 0);
+
+  return a > b;
+}
+
+console.log(arrayMadness([4, 5, 6], [1, 2, 3]));
