@@ -2657,3 +2657,9 @@ function arrayMadness(a, b) {
 }
 
 console.log(arrayMadness([4, 5, 6], [1, 2, 3]));
+
+// 196. Holiday VIII - Duty Free
+
+function dutyFree(normPrice, discount, hol) {
+  return Math.floor(hol / (normPrice * (discount / 100)));
+}
