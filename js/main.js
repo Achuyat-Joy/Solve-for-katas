@@ -2663,3 +2663,9 @@ console.log(arrayMadness([4, 5, 6], [1, 2, 3]));
 function dutyFree(normPrice, discount, hol) {
   return Math.floor(hol / (normPrice * (discount / 100)));
 }
+
+// 197. Grasshopper - Function syntax debugging
+
+function main(verb, noun) {
+  return verb + noun;
+}
