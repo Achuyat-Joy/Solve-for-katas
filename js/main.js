@@ -2675,3 +2675,17 @@ function main(verb, noun) {
 function howManyLightsabersDoYouOwn(name) {
   return name === "Zach" ? 18 : 0;
 }
+
+// 199. Enumerable Magic #25 - Take the First N Elements
+
+function take(arr, n) {
+  // let ans = [];
+
+  // for(let i=0; i<n; i++){
+  //   ans.push(arr[i]);
+  // }
+
+  return arr.slice(0, n);
+}
+
+console.log(take([0, 1, 2, 3, 4, 5], 3));
