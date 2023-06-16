@@ -2689,3 +2689,21 @@ function take(arr, n) {
 }
 
 console.log(take([0, 1, 2, 3, 4, 5], 3));
+
+// 200. How old will I be in 2099?
+
+function calculateAge(a, b) {
+  if (b - a > 1) {
+    return `You are ${b - a} years old.`;
+  } else if (b - a == 1) {
+    return `You are ${b - a} year old.`;
+  } else if (b - a < -1) {
+    return `You will be born in ${a - b} years.`;
+  } else if (b - a == -1) {
+    return `You will be born in ${a - b} year.`;
+  } else if (b - a == 0) {
+    return `You were born this very year!`;
+  }
+}
+
+console.log(calculateAge(2001, 2000));
