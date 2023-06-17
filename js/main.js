@@ -2707,3 +2707,11 @@ function calculateAge(a, b) {
 }
 
 console.log(calculateAge(2001, 2000));
+
+// 201. Find the Remainder
+
+function remainder(n, m) {
+  return n > m ? n % m : m % n;
+}
+
+console.log(remainder(0, 0));
