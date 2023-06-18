@@ -2715,3 +2715,17 @@ function remainder(n, m) {
 }
 
 console.log(remainder(0, 0));
+
+// 202. Welcome to the City
+
+function sayHello(name, city, state) {
+  // let a = '';
+
+  // name.filter(val=>a+=val+' ');
+
+  // a = a.trim()
+
+  return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;
+}
+
+console.log(sayHello(["John", "Smith"], "Phoenix", "Arizona"));
