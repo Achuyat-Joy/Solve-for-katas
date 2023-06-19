@@ -2729,3 +2729,11 @@ function sayHello(name, city, state) {
 }
 
 console.log(sayHello(["John", "Smith"], "Phoenix", "Arizona"));
+
+// 203. No Loops 2 - You only need one
+
+function check(a, x) {
+  return a.includes(x);
+}
+
+console.log(check([9, 2], 2));
