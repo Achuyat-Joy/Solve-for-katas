@@ -2737,3 +2737,18 @@ function check(a, x) {
 }
 
 console.log(check([9, 2], 2));
+
+// 204. How many stairs will Suzuki climb in 20 years?
+
+function stairsIn20(s) {
+  s = s.reduce((a, b) => a.concat(b), []).reduce((a, b) => a + b, 0);
+  return s * 20;
+}
+
+console.log(
+  stairsIn20([
+    [1, 2],
+    [3, 4],
+    [5, 6],
+  ])
+);
