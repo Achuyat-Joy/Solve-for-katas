@@ -2752,3 +2752,11 @@ console.log(
     [5, 6],
   ])
 );
+
+// 205. Grasshopper - Messi Goals (simple adding)
+
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
