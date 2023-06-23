@@ -2760,3 +2760,26 @@ var championsLeagueGoals = 10;
 var copaDelReyGoals = 5;
 
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+// 206. L1: Bartender, drinks!
+
+function getDrinkByProfession(param) {
+  param = param.toLowerCase();
+
+  const para = {
+    jabroni: "Patron Tequila",
+    "school counselor": "Anything with Alcohol",
+    programmer: "Hipster Craft Beer",
+    "bike gang member": "Moonshine",
+    politician: "Your tax dollars",
+    rapper: "Cristal",
+  };
+
+  if (para[param] == undefined) {
+    return "Beer";
+  } else {
+    return para[param];
+  }
+}
+
+console.log(getDrinkByProfession("pug"));
