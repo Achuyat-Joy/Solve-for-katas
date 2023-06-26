@@ -2792,3 +2792,19 @@ function animal(obj) {
 }
 
 console.log(animal({ name: "dog", legs: 4, color: "white" }));
+
+// 208. Remove duplicates from list
+
+function distinct(a) {
+  const ans = [];
+
+  a = a.filter((val) => {
+    if (!ans.includes(val)) {
+      ans.push(val);
+    }
+  });
+
+  return ans;
+}
+
+console.log(distinct([1, 1, 2, 2, 3]));
