@@ -2783,3 +2783,12 @@ function getDrinkByProfession(param) {
 }
 
 console.log(getDrinkByProfession("pug"));
+
+// 207. Training JS #5: Basic data types--Object
+
+function animal(obj) {
+  // console.log(Object.keys(obj))
+  return `This ${obj.color + " " + obj.name} has ${obj.legs} legs.`;
+}
+
+console.log(animal({ name: "dog", legs: 4, color: "white" }));
