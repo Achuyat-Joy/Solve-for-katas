@@ -2808,3 +2808,11 @@ function distinct(a) {
 }
 
 console.log(distinct([1, 1, 2, 2, 3]));
+
+// 209. Printing Array elements with Comma delimiters
+
+function printArray(array) {
+  return array.join(",");
+}
+
+console.log(printArray(["h", "o", "l", "a"]));
