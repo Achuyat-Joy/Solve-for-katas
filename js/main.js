@@ -2858,3 +2858,17 @@ function answer3() {
   //the answer should be "yes" or "no"
   return "yes";
 }
+
+// 211. Sum of Multiples
+
+function sumMul(n, m) {
+  let p = 0;
+
+  for (let i = 0; i < m; i += n) {
+    p += i;
+  }
+
+  return p > 0 ? p : "INVALID";
+}
+
+console.log(sumMul(4, -7));
