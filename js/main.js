@@ -2884,3 +2884,31 @@ function mango(quantity, price) {
 }
 
 console.log(mango(2, 3));
+
+// 213. Training JS #8: Conditional statement--switch
+
+function howManydays(month) {
+  var days;
+  switch (month) {
+    case 4:
+      days = 30;
+      break;
+    case 6:
+      days = 30;
+      break;
+    case 9:
+      days = 30;
+      break;
+    case 11:
+      days = 30;
+      break;
+    case 2:
+      days = 28;
+      break;
+    default:
+      days = 31;
+  }
+  return days;
+}
+
+console.log(howManydays(3));
