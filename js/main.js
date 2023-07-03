@@ -2872,3 +2872,15 @@ function sumMul(n, m) {
 }
 
 console.log(sumMul(4, -7));
+
+// 212. Price of Mangoes
+
+function mango(quantity, price) {
+  let free = Math.floor(quantity / 3);
+
+  let p = (quantity - free) * price;
+
+  return p;
+}
+
+console.log(mango(2, 3));
