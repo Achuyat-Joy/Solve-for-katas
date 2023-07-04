@@ -2912,3 +2912,11 @@ function howManydays(month) {
 }
 
 console.log(howManydays(3));
+
+// 214. Hex to Decimal
+
+function hexToDec(hexString) {
+  return parseInt(hexString, 16);
+}
+
+console.log(hexToDec("1"));
