@@ -2920,3 +2920,12 @@ function hexToDec(hexString) {
 }
 
 console.log(hexToDec("1"));
+
+// 215. Bin to Decimal
+
+function binToDec(bin) {
+  console.log(bin);
+  return parseInt(bin, 2);
+}
+
+console.log(binToDec("1010"));
