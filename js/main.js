@@ -2937,3 +2937,19 @@ function include(arr, item) {
 }
 
 console.log(include([1, 2, 3], 4));
+
+// 217. Remove First and Last Character Part Two
+
+function array(string) {
+  
+  string = string.split(',');
+
+  string.pop();
+  string.shift();
+
+  string = string.join(' ');
+
+  return string.length<=0?null:string;
+}
+
+console.log(array('1,2'));
