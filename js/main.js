@@ -2929,3 +2929,11 @@ function binToDec(bin) {
 }
 
 console.log(binToDec("1010"));
+
+// 216. Enumerable Magic - Does My List Include This?
+
+function include(arr, item) {
+  return arr.includes(item);
+}
+
+console.log(include([1, 2, 3], 4));
