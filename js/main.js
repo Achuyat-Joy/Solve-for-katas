@@ -2941,15 +2941,34 @@ console.log(include([1, 2, 3], 4));
 // 217. Remove First and Last Character Part Two
 
 function array(string) {
-  
-  string = string.split(',');
+  string = string.split(",");
 
   string.pop();
   string.shift();
 
-  string = string.join(' ');
+  string = string.join(" ");
 
-  return string.length<=0?null:string;
+  return string.length <= 0 ? null : string;
 }
 
-console.log(array('1,2'));
+console.log(array("1,2"));
+
+// 218. Training JS #10: loop statement --for
+
+function pickIt(arr) {
+  var odd = [],
+    even = [];
+  //coding here
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      even.push(arr[i]);
+    } else {
+      odd.push(arr[i]);
+    }
+  }
+
+  return [odd, even];
+}
+
+console.log(pickIt([1, 2, 3]));
