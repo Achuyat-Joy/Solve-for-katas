@@ -2998,3 +2998,35 @@ function exponent(a, b) {
 function subt(a, b) {
   return a - b;
 }
+
+// 220. Smallest unused ID
+
+function nextId(ids) {
+  ids = ids.sort((a, b) => a - b);
+
+  let newId = [];
+  let store = 0;
+  let id = [];
+
+  ids.filter((val) => {
+    if (!id.includes(val)) {
+      id.push(val);
+    }
+  });
+
+  for (let i = 0; i < id.length; i++) {
+    newId.push(i);
+  }
+
+  for (let i = 0; i < id.length; i++) {
+    if (newId[i] !== id[i]) {
+      return newId[i];
+    } else {
+      store = newId.length;
+    }
+  }
+
+  return store;
+}
+
+console.log(nextId([0, 1, 3]));
