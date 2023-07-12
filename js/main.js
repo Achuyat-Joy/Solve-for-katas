@@ -3030,3 +3030,13 @@ function nextId(ids) {
 }
 
 console.log(nextId([0, 1, 3]));
+
+// 221. Find the Difference in Age between Oldest and Youngest Family Members
+
+function differenceInAges(ages) {
+  ages = ages.sort((a, b) => a - b);
+
+  let d = ages[ages.length - 1] - ages[0];
+
+  return [ages[0], ages[ages.length - 1], d];
+}
