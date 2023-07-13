@@ -3040,3 +3040,12 @@ function differenceInAges(ages) {
 
   return [ages[0], ages[ages.length - 1], d];
 }
+
+// 222. Simple validation of a username with regex
+
+function validateUsr(username) {
+  let res = /^[a-z0-9_]{4,16}$/.test(username);
+  return res;
+}
+
+console.log(validateUsr(" aaaaa"));
