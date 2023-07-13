@@ -3049,3 +3049,11 @@ function validateUsr(username) {
 }
 
 console.log(validateUsr(" aaaaa"));
+
+// 223. Regex count lowercase letters
+
+function lowercaseCount(str) {
+  return (str.match(/[a-z]/g) || []).length;
+}
+
+console.log(lowercaseCount("aaaaa"));
