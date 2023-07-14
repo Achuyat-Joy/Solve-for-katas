@@ -3057,3 +3057,25 @@ function lowercaseCount(str) {
 }
 
 console.log(lowercaseCount("aaaaa"));
+
+// 224. Tip Calculator
+
+function calculateTip(amount, rating) {
+  rating = rating.toLowerCase();
+
+  const rate = {
+    terrible: 0,
+    poor: 5,
+    good: 10,
+    great: 15,
+    excellent: 20,
+  };
+
+  if (rate[rating] == undefined) {
+    return "Rating not recognised";
+  } else {
+    return Math.ceil(amount * (rate[rating] / 100));
+  }
+}
+
+console.log(calculateTip(26.95, "good"));
