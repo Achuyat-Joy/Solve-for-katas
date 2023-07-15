@@ -3079,3 +3079,13 @@ function calculateTip(amount, rating) {
 }
 
 console.log(calculateTip(26.95, "good"));
+
+// 225. Swap Values
+
+function swapValues(arr) {
+  var temp = arr[0];
+  arr[0] = arr[1];
+  arr[1] = temp;
+
+  return arr;
+}
