@@ -3089,3 +3089,10 @@ function swapValues(arr) {
 
   return arr;
 }
+
+// 226. Grasshopper - Variable Assignment Debug
+
+var a = "dev";
+var b = "Lab";
+
+var name = a + b;
