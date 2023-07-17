@@ -3096,3 +3096,14 @@ var a = "dev";
 var b = "Lab";
 
 var name = a + b;
+
+// 227. Remove the time
+
+function shortenToDate(longDate) {
+  const a = longDate.split(",");
+  const b = a[0].toString();
+
+  return b;
+}
+
+console.log(shortenToDate("Friday May 2, 9am"));
