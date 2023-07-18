@@ -3107,3 +3107,11 @@ function shortenToDate(longDate) {
 }
 
 console.log(shortenToDate("Friday May 2, 9am"));
+
+// 228. Kata Example Twist
+
+var websites = [];
+
+for (let i = 0; i < 1000; i++) {
+  websites.push("codewars");
+}
