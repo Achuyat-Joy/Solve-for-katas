@@ -3115,3 +3115,10 @@ var websites = [];
 for (let i = 0; i < 1000; i++) {
   websites.push("codewars");
 }
+
+// 229. Are arrow functions odd?
+
+function odds(values) {
+  // arrow it
+  return values.filter((val) => val % 2 != 0);
+}
