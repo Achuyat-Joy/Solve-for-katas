@@ -3122,3 +3122,13 @@ function odds(values) {
   // arrow it
   return values.filter((val) => val % 2 != 0);
 }
+
+// 230. Determine offspring sex based on genes XX and XY chromosomes
+
+function chromosomeCheck(sperm) {
+  return /Y/g.test(sperm)
+    ? "Congratulations! You're going to have a son."
+    : "Congratulations! You're going to have a daughter.";
+}
+
+console.log(chromosomeCheck("XXY"));
