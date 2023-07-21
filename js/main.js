@@ -3132,3 +3132,11 @@ function chromosomeCheck(sperm) {
 }
 
 console.log(chromosomeCheck("XXY"));
+
+// 231. A Strange Trip to the Market
+
+function isLockNessMonster(s) {
+  return /3.50|tree fiddy|three fifty/g.test(s);
+}
+
+console.log(isLockNessMonster("3"));
