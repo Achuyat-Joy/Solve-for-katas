@@ -3140,3 +3140,11 @@ function isLockNessMonster(s) {
 }
 
 console.log(isLockNessMonster("3"));
+
+// 232. validate code with simple regex
+
+function validateCode(code) {
+  return /^[123]/.test(code);
+}
+
+console.log(validateCode(423));
