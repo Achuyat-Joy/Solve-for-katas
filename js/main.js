@@ -3148,3 +3148,20 @@ function validateCode(code) {
 }
 
 console.log(validateCode(423));
+
+// 233. Power
+
+function numberToPower(number, power) {
+  // console.info(Math.log2(1024));
+  let ans = 1;
+  if (power == 0) {
+    return ans;
+  } else {
+    for (let i = 0; i < power; i++) {
+      ans *= number;
+    }
+  }
+  return ans;
+}
+
+console.log(numberToPower(4, 2));
