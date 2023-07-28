@@ -3190,3 +3190,17 @@ function _if(bool, func1, func2) {
     func2();
   }
 }
+
+// 236. UEFA EURO 2016
+
+function uefaEuro2016(teams, scores) {
+  return `At match ${teams[0]} - ${teams[1]}, ${
+    scores[0] == scores[1]
+      ? "teams played draw."
+      : scores[0] > scores[1]
+      ? `${teams[0]} won!`
+      : `${teams[1]} won!`
+  }`;
+}
+
+console.log(uefaEuro2016(["Germany", "Ukraine"], [2, 3]));
