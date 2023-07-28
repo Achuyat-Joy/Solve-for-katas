@@ -3204,3 +3204,11 @@ function uefaEuro2016(teams, scores) {
 }
 
 console.log(uefaEuro2016(["Germany", "Ukraine"], [2, 3]));
+
+// 237. Multiply the number
+
+function multiply(number) {
+  return number * Math.pow(5, Math.abs(number).toString().length);
+}
+
+console.log(multiply(-3));
