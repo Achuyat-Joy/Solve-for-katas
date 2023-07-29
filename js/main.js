@@ -3212,3 +3212,7 @@ function multiply(number) {
 }
 
 console.log(multiply(-3));
+
+// 238. Incorrect division method
+
+const solve = (x, y) => x / y
