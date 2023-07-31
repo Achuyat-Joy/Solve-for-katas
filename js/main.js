@@ -3226,3 +3226,15 @@ function myFirstKata(a, b) {
     return (a % b) + (b % a);
   }
 }
+
+// 240. Is it a number?
+
+function isDigit(s) {
+  console.log(s);
+  let l = s;
+
+  s = parseFloat(s);
+  console.log(s);
+
+  return s == l;
+}
