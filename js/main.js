@@ -3215,4 +3215,14 @@ console.log(multiply(-3));
 
 // 238. Incorrect division method
 
-const solve = (x, y) => x / y
+const solve = (x, y) => x / y;
+
+// 239. Fix the Bugs (Syntax) - My First Kata
+
+function myFirstKata(a, b) {
+  if (typeof a != "number" || typeof b != "number") {
+    return false;
+  } else {
+    return (a % b) + (b % a);
+  }
+}
