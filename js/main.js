@@ -3238,3 +3238,29 @@ function isDigit(s) {
 
   return s == l;
 }
+
+//241. Fuel Calculator: Total Cost
+
+function fuelPrice(litres, pricePerLitre) {
+  if (litres > 0 && litres < 2) {
+    return +(litres * pricePerLitre).toFixed(2);
+  }
+
+  if (litres >= 2 && litres < 4) {
+    return +(litres * (pricePerLitre - 0.05)).toFixed(2);
+  }
+
+  if (litres >= 4 && litres < 6) {
+    return +(litres * (pricePerLitre - 0.1)).toFixed(2);
+  }
+
+  if (litres >= 6 && litres < 8) {
+    return +(litres * (pricePerLitre - 0.15)).toFixed(2);
+  }
+  if (litres >= 8 && litres < 10) {
+    return +(litres * (pricePerLitre - 0.2)).toFixed(2);
+  }
+  if (litres >= 10) {
+    return +(litres * (pricePerLitre - 0.25)).toFixed(2);
+  }
+}
