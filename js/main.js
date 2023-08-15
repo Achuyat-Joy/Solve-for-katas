@@ -3264,3 +3264,18 @@ function fuelPrice(litres, pricePerLitre) {
     return +(litres * (pricePerLitre - 0.25)).toFixed(2);
   }
 }
+
+// 242. ASCII Total
+
+function uniTotal(string) {
+  string = string.split("");
+  let total = 0;
+
+  for (let i = 0; i < string.length; i++) {
+    total += string[i].charCodeAt();
+  }
+
+  return total;
+}
+
+console.log(uniTotal("aaa"));
