@@ -3286,3 +3286,12 @@ function validateHello(greetings) {
   res = /hello|ciao|salut|hallo|hola|ahoj|czesc/i.test(greetings);
   return res;
 }
+
+// 244. Grader
+
+function grader(score) {
+  console.log(score);
+  return score>=0.9 && score<=1?"A":score>=0.8 && score<0.9?"B":score>=0.7 && score<0.8?"C":score>=0.6 && score<0.7?"D":score<0.6 || score>1?"F":'error';
+}
+
+console.log(grader('1.2'))
