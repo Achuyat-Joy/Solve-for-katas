@@ -3279,3 +3279,10 @@ function uniTotal(string) {
 }
 
 console.log(uniTotal("aaa"));
+
+// 243. Did she say hallo?
+
+function validateHello(greetings) {
+  res = /hello|ciao|salut|hallo|hola|ahoj|czesc/i.test(greetings);
+  return res;
+}
