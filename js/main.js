@@ -3291,7 +3291,27 @@ function validateHello(greetings) {
 
 function grader(score) {
   console.log(score);
-  return score>=0.9 && score<=1?"A":score>=0.8 && score<0.9?"B":score>=0.7 && score<0.8?"C":score>=0.6 && score<0.7?"D":score<0.6 || score>1?"F":'error';
+  return score >= 0.9 && score <= 1
+    ? "A"
+    : score >= 0.8 && score < 0.9
+    ? "B"
+    : score >= 0.7 && score < 0.8
+    ? "C"
+    : score >= 0.6 && score < 0.7
+    ? "D"
+    : score < 0.6 || score > 1
+    ? "F"
+    : "error";
 }
 
-console.log(grader('1.2'))
+console.log(grader("1.2"));
+
+// 245. Is your period late?
+
+function periodIsLate(last, today, cycleLength) {
+  return (
+    (today.getTime() - last.getTime()) / (1000 * 60 * 60 * 24) > cycleLength
+  );
+}
+
+console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 35));
