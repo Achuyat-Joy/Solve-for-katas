@@ -3315,3 +3315,32 @@ function periodIsLate(last, today, cycleLength) {
 }
 
 console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 35));
+
+// 246. Training JS #11: loop statement --break,continue
+
+function grabDoll(dolls) {
+  var bag = [];
+
+  for (let i = 0; i < dolls.length; i++) {
+    if (dolls[i] == "Hello Kitty" || dolls[i] == "Barbie doll") {
+      bag.push(dolls[i]);
+    } else {
+      continue;
+    }
+    if (bag.length == 3) {
+      break;
+    }
+  }
+
+  return bag;
+}
+
+console.log(
+  grabDoll([
+    "Barbie doll",
+    "Hello Kitty",
+    "Snow white",
+    "Hello Kitty",
+    "Hello Kitty",
+  ])
+);
