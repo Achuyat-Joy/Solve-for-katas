@@ -3344,3 +3344,9 @@ console.log(
     "Hello Kitty",
   ])
 );
+
+// 247. Grasshopper - Combine strings
+
+function combineNames(first, last) {
+  return first + " " + last;
+}
